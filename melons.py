@@ -31,6 +31,17 @@ class Melon(object):
                                              self.weight,
                                              self.melon_type)
 
-# FIXME: Add Squash class definition here.
+
 class Squash(Melon):
-    pass
+    
+    # add a method that includes prep and painting of squash
+    # robots.painterbot.paint(self) call this function 
+
+    def prep(self):
+        """Prepare the melon."""
+
+        super().prep()
+        robots.painterbot.paint(self)
+
+# melon_1 = Melon("Watermelon")
+# melon_2 = Melon("Squash")
